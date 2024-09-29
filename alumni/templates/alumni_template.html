@@ -1,0 +1,21 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+  KETA SENIOR HIGH TECHNICAL SCHOOL 
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard">
+
+  <h1>ALMNI ICT CENTER</h1>
+  
+<ul>
+  {% for x in playoff_stars %}
+    <li> <a href="details/{{ x.id }}"> {{ x.Brand_Name }} {{ x.Item_Name }}</a> </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

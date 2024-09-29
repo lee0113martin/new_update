@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+
+{% block title %}
+  KETA SENIOR HIGH TECHNICAL SCHOOL 
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard">
+
+  <h1> LEASED ITEMS</h1>
+  
+<ul>
+  {% for x in leasings  %}
+    <li> <a href="leased/{{ x.id }}"> {{ x.Brand_Name }} {{ x.Item_Name }}</a> </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

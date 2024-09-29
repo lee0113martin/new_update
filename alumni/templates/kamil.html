@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EXTRA </title>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: midnightblue;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %}
+ALUMNI CENTER
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard"></div>
+<center>
+   
+  <h2><U> 2023 ANNUAL REPORT </U></h2> 
+  
+<p>
+    <iframe src="{% static 'ALUMNI_CENTER_REPORT_2023.pdf' %}" width="600" height="400"></iframe>
+</p>
+
+<h2><U> 2024 ANNUAL REPORT </U></h2> 
+
+<p>
+    <iframe src="{% static 'ANNUAL_REPORT_2024.pdf' %}" width="600" height="400"></iframe>
+</p>
+
+<p>
+  <!--<button onclick = "window.location.href = '{% url 'pdf_view' %}'">View PDF</button> --> 
+  <a href="{% url 'pdf_view' %}" target="_blank" class="btn"> ANNUAL REPORT</a>
+
+</p>
+</center>
+</div>
+{% endblock %}
+
+</body>
+</html>

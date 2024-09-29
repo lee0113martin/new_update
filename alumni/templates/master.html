@@ -1,0 +1,35 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="{% static 'mystyles.css' %}">  
+  <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+
+  <div class="topnav">
+  <center>
+
+  <img src="{% static 'KETASCO.png' %}" height="40px" width="50px"/>  
+
+    <a href="/">| HOME</a> |
+    <a href="/alumni/">ITEMS </a> |
+    <a href="/alumni/items/"> DETAILS </a> |
+    <a href="/alumni/book_view/"> LIBRARY </a> |
+    <a href="/alumni/leased_view/"> LEASED </a>  |
+    <a href="/alumni/extra/"> EXTRA </a> |
+ 
+  <img src="{% static 'KETASCO.png' %}" height="40px" width="50px"/>  
+  
+</center>
+  </div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

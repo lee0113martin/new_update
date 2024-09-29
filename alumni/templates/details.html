@@ -1,0 +1,33 @@
+
+{% extends "master.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+  <center>  
+  
+      <a href="/">| HOME</a> |
+      <a href="/alumni/">ITEMS </a> |  
+    
+  </center>
+
+{% block title %}
+Details About: {{ playoff_stars.Brand_Name }} {{ playoff_stars.Item_Name }}
+{% endblock %}
+
+{% block content %}
+<div class="mycard">
+  <h1>{{ playoff_stars.Brand_Name }} {{ playoff_stars.Item_Name }}</h1>
+
+  <p>Quantity: {{ playoff_stars.Quantity }}</p>
+  <p>Remark: {{ playoff_stars.Remark }}</p>
+</div>
+{% endblock %}
+
+
+</body>
+</html>

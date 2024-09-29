@@ -1,0 +1,21 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+ALMNI ICT CENTER
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard">
+
+  <h1> LEASED ITEMS  </h1>
+  
+<ul>
+  {% for x in leasings %}
+    <li> <a href="leased_details/{{ x.id }}"> {{ x.Brand_Name }} {{ x.Item_Name }}</a> </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

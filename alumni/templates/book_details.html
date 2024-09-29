@@ -1,0 +1,18 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+Details About: {{ kamil.Title }} 
+{% endblock %}
+
+{% block content %}
+<div class="mycard">
+  <h1>{{ kamil.Title }}</h1>
+
+  <p>Title: {{ kamil.Title }}</p>
+  <p>Author: {{ kamil.Author }}</p>
+  <p>Quantity: {{ kamil.Quantity }}</p>
+  <p>Remark: {{ kamil.Remark }}</p>
+
+</div>
+{% endblock %}

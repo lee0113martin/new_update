@@ -1,0 +1,20 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+Details About: {{ leaser.Brand_Name }} {{ leaser.Item_Name }}
+{% endblock %}
+
+{% block content %}
+<div class="mycard">
+  <h1>{{ leaser.Brand_Name }} {{ leaser.Item_Name }}</h1>
+
+  <p>Recipient: {{ leaser.Recipient }}</p>
+  <p>Department: {{ leaser.Department }}</p>
+  <p>Quantity: {{ leaser.Quantity }}</p>
+  <p>Receive Date: {{ leaser.Receive_Date }}</p>
+  <p>Return Date: {{ leaser.Return_Date }}</p>
+  <p>Remark: {{ leaser.Remark }}</p>
+
+</div>
+{% endblock %}

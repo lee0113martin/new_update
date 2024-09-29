@@ -1,0 +1,31 @@
+{% extends "master.html" %}
+
+{% load static %}
+{% block title %}
+  KETA SENIOR HIGH TECHNICAL SCHOOL 
+{% endblock %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+
+<CEnter>
+<table border='10'>
+  <tr>
+    <th>Item Name</th>
+    <th>Brand Name</th>
+    <th>Quantity</th>
+    <th>Remark</th>
+  </tr>
+  {% for x in nba_data %}
+    <tr>
+      <td>{{ x.Item_Name }}</td>
+      <td>{{ x.Brand_Name }}</td>
+      <td>{{ x.Quantity }}</td>
+      <td>{{ x.Remark }}</td>
+    </tr>
+  {% endfor %}
+</table>
+<p> NOW OR NEVER !!!</p>
+</CEnter>
+{% endblock %} 

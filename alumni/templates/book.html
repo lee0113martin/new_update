@@ -1,0 +1,21 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+LIBRARY
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard">
+
+  <h1>  ALUMNI LIBRARY  </h1> 
+  
+<ul>
+  {% for x in library %}
+    <li> <a href="book_details/{{ x.id }}"> {{ x.Title }} </a> </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}
